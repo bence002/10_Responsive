@@ -1,0 +1,31 @@
+body {
+    font-family: Roboto Slab, serif;
+}
+
+.fluid {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.78;   
+}
+
+@media (min-width: 500px) {
+    .fluid {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 500px;
+    }
+    h1 {
+        max-width: 273px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 64px;
+        font-weight: normal;
+        line-height: 1;
+        text-align: center;
+    }
+}
