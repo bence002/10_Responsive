@@ -5,7 +5,6 @@ body {
    color: #4a4a4a;
    font-size: 12px;
    line-height: 1.5;
-   width: 300px;
    margin: 8px, 20px, 20px, 8px;
 }
 .gibson {
@@ -62,14 +61,13 @@ body {
    line-height: 0.83;
    letter-spacing: normal;
  }
-   .section1 {
+.section1 {
 
-      background-color: #f8e71c;
-      font-size: 36px;
-      font-weight: bold;
-      line-height: 1;
-      width: 269px;
-      margin-bottom: 20px;
+   background-color: #f8e71c;
+   font-size: 36px;
+   font-weight: bold;
+   line-height: 1;
+   margin-bottom: 20px;
 
 }
 
@@ -235,4 +233,10 @@ section { background: #ffc107;}
 
 main {
    display: flex;
+}
+
+.fluid {
+   max-width: 600px;
+   margin-left: auto;
+   margin-right: auto;
 }
