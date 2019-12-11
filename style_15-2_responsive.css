@@ -10,14 +10,16 @@ body {
 h1 {
     font-size: 36px;
     font-weight: bold;
-    line-height: 1.78;   
+    line-height: 1;
+    /* Wanted to change my line height, but it did not change in the browser when previewed. Then I figured, that I think it somehow catched some of my CSS values from yesterday and it preloaded the previously cached CSS. When refreshed without cache, it changed.
+    
+    How do I prevent that from happening when I e.g. update a page on my website?  */
 }
 
 @media (min-width: 500px) {
     .fluid {
         margin-left: auto;
         margin-right: auto;
-        max-width: 500px;
     }
     h1 {
         max-width: 273px;
@@ -25,7 +27,14 @@ h1 {
         margin-right: auto;
         font-size: 64px;
         font-weight: normal;
-        line-height: 1;
         text-align: center;
+    }
+
+    .paragraph {
+        max-width: 500px;
+        /* I wanted to prevent paragraph text wrapping its lines between 500px and 516px width, but couldn't really figure out how.
+        
+        ~SEVERAL HOURS LATER~
+        Okay, I've just realised that it's probably the user agent's preset margin that is adding up to the paragraph on both sides*/
     }
 }
